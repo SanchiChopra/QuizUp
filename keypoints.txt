@@ -30,3 +30,6 @@
 (We use npx package runner to directly run the create-react-app utility from the npm registry.)
 
 --> Hot Reloading: We can see the updates made to the web app without having to refresh the page.
+
+--> We need the ReactDOM library to render our app on the web page. We import React lubrary and Components 
+    class from react module too. 
