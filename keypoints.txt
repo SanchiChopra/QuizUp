@@ -1,0 +1,32 @@
+--> React offers best support for scalability and efficiency because:
+1. States: no added load of selectors, DOM etc. We only have to define States, helps us imagine 
+            everything in terms of data and not technical integrities.
+2. Virtual DOM: React first makes changes to virtual DOM (representation of Real DOM in memory) 
+                before altering the real DOM hence eliminating expensive interactions with the Real DOM 
+                everytime the UI needs to be updated.
+3. Components: It helps us to modularize the code into independent reusable features.
+
+(A) Class Components:
+
+--> Render method in react consists of HTML like layout with added advantage of using JS expressions within it directly. 
+    This is JSX, a syntax derivative of JS.
+    We can dynamically render style effects based on value of a state variable.
+
+--> Whenever a state property changes, React recomputes what should be displayed in the UI by calling the 
+    render method again. Hence, these properties are reactive in nature.
+
+--> Props: Allow us to pass data into a Component from a parent. Used to set label text on our Component.
+            Used for customizing lable on our button.
+
+(B) Function Components:
+
+--> It is a simple function that renders a JSX template. It takes a prop and renders a message.
+--> It does not implement local state and other features that a class Component offers.
+
+(C) Hooks API: 
+
+--> Helps to implement local state and other features and hence, blurs the difference between class and function Components.
+
+(We use npx package runner to directly run the create-react-app utility from the npm registry.)
+
+--> Hot Reloading: We can see the updates made to the web app without having to refresh the page.
