@@ -3,11 +3,11 @@ this component demonstrates a function component, which do not provide state man
 unlike a class component. We don't need also such features in a component that simply display data 
 and provide interaction features. */
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 //no class created, a function that brings in props using a single argument
 
-const QuestionBox =({question, options}) => {
+const QuestionBox =({question, options, selected}) => {
 
     /*question and options arrays are 2 props, answer is a state variable created using useState function and we set the
     initial value of answer from the options array. 
@@ -20,7 +20,10 @@ const QuestionBox =({question, options}) => {
             { /*rendering a series of buttons */} 
             
             {answer.map((text, index) => (
-                <button key={index} className="answerBtn">
+                <button key={index} className="answerBtn" onClick = {() => {
+                    setAnswer([text]);
+                    selected(text);
+                }}>
                     {text}
                 </button>
                  /* ideally, use a unique value which will never be muted, for role of key attribute. */
