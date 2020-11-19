@@ -43,3 +43,8 @@
 --> Any changes made to the state variable would automatically signal an update, causing the component to re-render 
     with the updated data.
 
+--> A class component also could have been used for the QuestionBox component but a function component with just one state 
+    variable is a more efficient idea whereas a class component is an overkill for this use.
+
+--> Production Build is done by the command "npm run build" which creates a build folder. This folder only should be 
+uploaded while deployment. It helps make the files compact.
