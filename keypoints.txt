@@ -34,6 +34,11 @@
 --> We need the ReactDOM library to render our app on the web page. We import React lubrary and Components 
     class from react module too. 
     
---> State is located in the root component because state should always be located at the nearest parent, hence central storage and usage of data happens.
+--> State is located in the root component because state should always be located at the nearest parent, hence 
+    central storage and usage of data happens.
 
-Bable compiler allows us to use bleeding edge JS features when building React apps, hence our apps are future safe already.
+--> Bable compiler allows us to use bleeding edge JS features when building React apps, hence our apps are future 
+    safe already.
+
+--> Any changes made to the state variable would automatically signal an update, causing the component to re-render 
+    with the updated data.
